@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Website</title>
+    <style>
+
+        body{
+            background-color:wheat;
+        }
+        #background {
+            min-height: 1050px;
+            width: 100%;
+        }
+
+        #top {
+            height: 35px;
+            width: 100%;
+            background: #2c7ad6;
+            line-height: 35px;
+            padding: 0px 20px 9px 100px;
+            box-sizing: border-box;
+            word-spacing: 10px;
+        }
+
+        #menu {
+            height: 65px;
+            width: 100%;
+            background: green;
+        }
+
+        #logo {
+            height: 65px;
+            width: 40%;
+            background: white;
+            text-align: center;
+            line-height: 65px;
+            font-size: 40px;
+            float: left;
+        }
+
+        #menu1 {
+            height: 65px;
+            width: 60%;
+            background: white;
+            float: left;
+        }
+
+        #menu1 UL {
+            list-style: none;
+            padding-left: 200px;
+            box-sizing: border-box;
+        }
+
+        #menu1 LI {
+            height: 45px;
+            width: 130px;
+            text-align: center;
+            display: inline-block;
+            line-height: 45px;
+            transform: translateY(-5px);
+            color: black;
+            font-size: 20px;
+        }
+
+        #menu1 LI:hover {
+            background: #2c7ad6;
+            color: white;
+            transition: all ease 1s;
+            border-radius: 3px;
+        }
+
+        #slider {
+            height: 640px;
+            width: 100%;
+            background: url(image/4.jpg);
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        #x {
+            height: 640px;
+            width: 40%;
+            background: rgba(0, 0, 0, 0.4);
+            float: left;
+            font-size: 41px;
+            color: white;
+            text-align: center;
+            padding-top: 250px;
+            box-sizing: border-box;
+        }
+
+        #y {
+            height: 640px;
+            width: 60%;
+            background: rgba(0, 0, 0, 0.4);
+            float: left;
+        }
+
+        #l {
+            height: 450px;
+            width: 60%;
+            background: rgba(255, 255, 255, 0.6);
+            float: left;
+            margin: 90px;
+            border-radius: 7px;
+        }
+
+        #l:hover {
+            background: linear-gradient(45deg, rgba(50, 177, 40, 0.6), rgba(255, 255, 255, 0.6));
+        }
+
+        #student {
+            margin: 50px 50px;
+            color: blue;
+        }
+
+        #Teacher {
+            margin: 50px 50px;
+            color: white;
+        }
+
+        .t {
+            height: 40px;
+            width: 100%;
+            border: 2px solid green;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-bottom: 15px;
+        }
+
+        #down {
+            height: 300px;
+            width: 100%;
+            margin-top: 10px;
+            background: #2c7ad6;
+            text-align: center;
+            padding-top: 10px;
+            color: white;
+        }
+
+        .footer {
+            height: 20px;
+            width: 100%;
+            background: black;
+            color: white;
+            text-align: center;
+        }
+
+        #newBooks {
+            margin: 20px;
+            padding: 20px;
+            background-color: #fff;
+        }
+
+        #availableBooks {
+            margin: 20px;
+            padding: 20px;
+            background-color: #fff;
+        }
+
+        .book-card {
+            display: flex;
+            border: 1px solid #ddd;
+            margin-bottom: 10px;
+            padding: 10px;
+            transition: all ease 0.5s;
+        }
+
+        .book-card:hover {
+            background-color: #2c7ad6;
+            color: white;
+        }
+
+        .book-details {
+            flex: 1;
+            padding-left: 10px;
+            color: black;
+        }
+
+        img {
+            max-width: 100px;
+            max-height: 150px;
+            object-fit: cover;
+        }
+
+        #marquee {
+            height: 40px;
+            width: 100%;
+            background: #ffcc00;
+            overflow: hidden;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        #marquee p {
+            font-size: 24px;
+            line-height: 30px;
+            white-space: nowrap;
+            animation: marquee 20s linear infinite;
+        }
+
+        @keyframes marquee {
+            0% {
+                transform: translateX(100%);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="top">
+        <a href="#" class="fa fa-envelope" style="text-decoration:none; color: white;">kambojsahil000001@gmail.com</a>
+        <a href="#" class="fa fa-phone" style="text-decoration:none; color: white;">+91-8209689793</a>
+        <a href="https://www.linkedin.com/in/sahil-kumar-ab02b1248?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="fa fa-linkedin" style="text-decoration: none; padding: 10px 12px;color: white; "></a>
+        <a href="https://www.instagram.com/itz_sahilkamboj?igsh=aGRwdDlhNmJtMTB6" class="fa fa-instagram" style="text-decoration: none; padding: 10px 12px;color: white;"></a>
+        <a href="https://x.com/SahilKumar11493?s=09" class="fa fa-twitter" style="text-decoration: none; padding: 10px 12px;color: white;"></a>
+    </div>
+
+    <div id="menu">
+        <div id="logo">LIBRARY <b style="color:#2c7ad6 ;">MANAGEMENT </b></div>
+        <div id="menu1">
+            <ul>
+                <a href="home.html"><li class="fa fa-home">Home</li></a>
+                    <a href="./gallery.html"><li class="fa fa-image">Gallery</li></a>
+                    <a href="./admin.html"><li class="fa fa-user">Admin Login</li></a>
+                    <a href="./register.html"><li class="fa fa-registered">Register</li></a>
+                    <a href="./index.html"><li class="fa fa-user">Login</li></a>
+
+            </ul>
+        </div>   
+    </div>
+
+    <div id="marquee">
+        <p>Welcome to Library Zone - We are open and ready to serve you!</p>
+    </div>
+
+    <section id="newBooks">
+        <h2>New Books Arrived</h2>
+        <div class="book-card">
+            <div class="book-details">
+                <p>Book 1: New Book Title 1</p>
+            </div>
+        </div>
+
+        <div class="book-card">
+            <div class="book-details">
+                <p>Book 2: New Book Title 2</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="availableBooks">
+        <div class="book-card">
+            <img src="OIP.jpeg" alt="Book 1">
+            <div class="book-details">
+                <h3>Book 1 Title</h3>
+                <p>Author: Author 1</p>
+                <p>Edition: 1st Edition</p>
+                <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+        </div>
+
+        <div class="book-card">
+            <img src="two.jpeg" alt="Book 2">
+            <div class="book-details">
+                <h3>Book 2 Title</h3>
+                <p>Author: Author 2</p>
+                <p>Edition: 2nd Edition</p>
+                <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+        </div>
+        <div class="book-card">
+            <img src="three.jpeg" alt="Book 2">
+            <div class="book-details">
+                <h3>Book 3 Title</h3>
+                <p>Author: Author 3</p>
+                <p>Edition: 2nd Edition</p>
+                <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+        </div>
+        <div class="book-card">
+            <img src="four.jpeg" alt="Book 2">
+            <div class="book-details">
+                <h3>Book 4 Title</h3>
+                <p>Author: Author 4</p>
+                <p>Edition: 2nd Edition</p>
+                <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+        </div>
+        <div class="book-card">
+            <img src="five.jpeg" alt="Book 2">
+            <div class="book-details">
+                <h3>Book 5 Title</h3>
+                <p>Author: Author 5</p>
+                <p>Edition: 2nd Edition</p>
+                <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+        </div>
+        <div class="book-card">
+            <img src="six.jpeg" alt="Book 2">
+            <div class="book-details">
+                <h3>Book 6 Title</h3>
+                <p>Author: Author 6</p>
+                <p>Edition: 2nd Edition</p>
+                <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+        </div>
+    </section>
+
+    <div id="down">
+        <h3>Stay Connected</h3>
+        <a href="https://www.linkedin.com/in/sahil-kumar-ab02b1248?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="fa fa-linkedin" style="text-decoration: none; padding: 10px 12px;color: white; "></a>
+        <a href="https://www.instagram.com/itz_sahilkamboj?igsh=aGRwdDlhNmJtMTB6" class="fa fa-instagram" style="text-decoration: none; padding: 10px 12px;color: white;"></a>
+        <a href="https://x.com/SahilKumar11493?s=09" class="fa fa-twitter" style="text-decoration: none; padding: 10px 12px;color: white;"></a>
+        <h2>Contant Address</h2>
+        <a href="#" class="fa fa-home" style="text-decoration: none; padding: 10px 12px;color: white; ">
+            Poornima college of Engineering , Sitapur , Jaipur
+        </a> <br>
+        <a href="#" class="fa fa-phone" style="text-decoration: none; padding: 10px 12px;color: white;">
+            +91-8209689793
+        </a> <br>
+        <a href="#" class="fa fa-envelope" style="text-decoration: none; padding: 10px 12px; color:white;">
+            kambojsahil000001@gmail
+        </a>
+        <div id="copyright">
+            <p>&copy; 2023 Your Library management. All rights reserved.</p>
+        </div>
+    </div>
+    
+
+    <div class="footer">Developed By : Sahil Kumar</div>
+</body>
+</html>
